@@ -13,7 +13,7 @@ url="https://api.artic.edu/api/v1/artworks"
 
 if args.id:
     url +="/"+args.id
-if args.search:
+elif args.search:
     url += "/search?q=" +args.search
 if args.fields:
     filteredFields=",".join(args.fields)
@@ -27,7 +27,7 @@ if args.fields:
 
 print(url)
 resp = requests.get(url)
-if args.artworks: #array
+if args.artworks and isinstance(resp.json()["data"], list): #array
     resp = resp.json()["data"][:int(args.artworks)]
     print(resp)
 else: #obj
