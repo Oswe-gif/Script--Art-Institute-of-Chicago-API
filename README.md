@@ -9,6 +9,7 @@ El script tiene como propósito traer los datos de la API  [Art Institute of Chi
 * ```--search/-s```: Filtra los artworks [Palabra]
 * ```--fields/-f```: Muestra solo los campos especificados. [id, title, _score, image_id]
 * ```--artworks/-a```: Cantidad de artworks a observar [Número]
+*  ```--mail/-m ```: Correo electrónico del destinatario al que se enviará el PDF
 # Reglas:
 * Campos que acepta el script [id, title, _score, image_id]
 * No se puede usar las banderas ```--id``` (artwork específico) y ```--search/-s``` (conjunto de artworks) de manera simultánea, debido a que generaría un conflicto en la API. En caso de uso simultáneo, se ignoraría la bandera ```--search``` para dar prioridad a ```--id```.
