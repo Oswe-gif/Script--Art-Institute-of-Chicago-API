@@ -78,7 +78,7 @@ def convertToPdf(title, content):
                     except:
                         pdf.multi_cell(180,10,"photo not avaible", new_x="LMARGIN", new_y="NEXT")                
             if key=="_score":
-                if not filteredFields or "_score" in filteredFields:#si es nulo entra o si esta dentro.
+                if not filteredFields or "_score" in filteredFields:
                     pdf.multi_cell(180,10,str(key)+": " +str(value), new_x="LMARGIN", new_y="NEXT")
             elif key!="image_id":
                 pdf.multi_cell(180,10,str(key)+": " +str(value), new_x="LMARGIN", new_y="NEXT")
