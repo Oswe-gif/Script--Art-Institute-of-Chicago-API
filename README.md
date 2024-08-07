@@ -2,7 +2,7 @@
 El script tiene como propósito traer los datos de la API  [Art Institute of Chicago](https://api.artic.edu/docs/). Así mismo, se ha añadido la opción de insertar una imagen en el PDF.
 # Previo
 * Instalar las dependencias necesarias del proyecto. Estar ubicado en la raíz del proyecto y ejecutar ```pip install -r requirements.txt``` o ```py -m pip install -r requirements.txt```
-* Crear un archivo .env (utilizando el archivo .env.example como referencia) e ingresar el correo del remitente junto con su contraseña.
+* Crear un archivo .env (utilizando el archivo .env.example como referencia) e ingresar el correo del remitente. Así mismo,  tener activado el doble factor de autenticación y una [contraseña de aplicación](https://profinomics.com/crear-contrasena-de-aplicacion-gmail/#:~:text=Para%20generar%20una%20contrase%C3%B1a%20de%20aplicaci%C3%B3n%20en%20Gmail%2C,en%20%E2%80%9CAcceder%20a%20contrase%C3%B1as%20de%20aplicaci%C3%B3n%E2%80%9D.%20M%C3%A1s%20elementos) generada de Gmail.
 # Reglas:
 * No se puede usar las banderas --id (artwork específico) y --search/-s (conjunto de artworks) de manera simultánea, debido a que generaría un conflicto en la API. En caso de uso simultáneo, se ignoraría la bandera --search para dar prioridad a --id.
 * No se puede usar las banderas --id (artwork específico) y --artworks/-a (filtra un conjunto de artworks) de manera simultánea, debido a que generaría un conflicto en la API. En caso de uso simultáneo, se ignoraría la bandera --artworks para dar prioridad a --id
