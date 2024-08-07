@@ -19,6 +19,7 @@ El script tiene como propósito traer los datos de la API  [Art Institute of Chi
 * ```py script-Art-Institute-of-Chicago-API.py```  --> Trae todos los datos
 * ```py script-Art-Institute-of-Chicago-API.py --id 129884``` --> Trae el artwork con el identificador especificado.
 * ```py script-Art-Institute-of-Chicago-API.py --search war``` --> Trae los artworks que contengan la palabra war.
-* ```py script-Art-Institute-of-Chicago-API.py -a 2 -f id,title_``` -->Muestra los dos primeros artworks con los campos titulos e IDs.
+* ```py script-Art-Institute-of-Chicago-API.py -a 2 -f id,title``` -->Muestra los dos primeros artworks con los campos titulos e IDs.
 * ```py script-Art-Institute-of-Chicago-API.py -s war -f id,image_id,_score``` --> Muestra los IDs, imágenes y score de los artworks filtrados por la palabra 'war'.
+*  ```py script-Art-Institute-of-Chicago-API.py --id 129884 -m example@gmail.com``` -->Envía un reporte en PDF del artwork al correo example@gmail.com.
   
